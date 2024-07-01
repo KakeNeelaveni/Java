@@ -1,3 +1,5 @@
+/* Write a program demonstrating Exception handling using try, catch and
+finally for handling a Arithmetic Exception and Array Index Out of Bounds Exception*/
 package com.exe;
 
 //class declaration
@@ -22,7 +24,10 @@ public class DemoArithmeticExe {
 			System.out.println("Exception caught");
 		} catch (ArrayIndexOutOfBoundsException ie) {
 			System.out.println(ie.getMessage());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		} finally {
+
 			System.out.println("End of program");
 		}
 
